@@ -15,34 +15,34 @@ npm install
 or
 yarn install
 ```
-## run agrichain node in localnet(window,linux,mac)
+## Just run agrichain node in localnet(window,linux,mac)
 ```
 npm start
 ```
 
-## run agrichain node on windows (in testnet)
+## Build and run agrichain node on windows (in testnet)
 ```
 npm run build-win64-test
 cd build/agrichain-win64-1.0.1-mainnet
 node app.js
 ```
-## run agrichain node on windows (in mainet)
+## Build and run agrichain node on windows (in mainet)
 ```
 npm run build-win64-main
 cd build/agrichain-win64-1.0.1-testnet
 node app.js
 ```
 
-## run agrichain node on linux (in testnet)
+## Build and run agrichain node on linux (in testnet)
 ```
 npm run build-linux-test
-cd build/agrichain-win64-1.0.1-testnet
+cd build/agrichain-linux-1.0.1-testnet
 node app.js
 ```
-## run agrichain node on linux (in mainet)
+## Build and run agrichain node on linux (in mainet)
 ```
 npm run build-linux-main
-cd build/agrichain-win64-1.0.1-testnet
+cd build/agrichain-linux-1.0.1-testnet
 node app.js
 ```
 
