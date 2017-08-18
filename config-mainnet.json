@@ -10,7 +10,9 @@
     }
   },
   "peers": {
-    "list": [],
+    "list": [
+      {"ip": "128.199.130.240", "port": 5000}
+    ],
     "blackList": [],
     "options": {
       "timeout": 4000

@@ -1,5 +1,5 @@
 {
-  "port": 5000,
+  "port": 4000,
   "address": "0.0.0.0",
   "publicIp": "",
   "logLevel": "log",
@@ -11,7 +11,7 @@
   },
   "peers": {
     "list": [
-      {"ip": "128.199.130.240", "port": 5000}
+      {"ip": "128.199.130.240", "port": 4000}
     ],
     "blackList": [],
     "options": {
