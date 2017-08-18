@@ -1,6 +1,4 @@
 
-
-
 ## System Dependency
 
 - nodejs v6.3.1+
@@ -10,19 +8,43 @@
 - libssl
 
 ## Install node_modules
-
 ```
 npm install
+or
+yarn install
+```
+## Just run as localnet
+```
+npm start
+```
+## Build for windows as localnet
+```
+npm run build-win64-local
+```
+## Build for windows as testnet
+```
+npm run build-win64-test
+```
+## Build for windows as mainnet
+```
+npm run build-win64-main
+```
+## Build for linux as localnet
+```
+npm run build-linux-local
+```
+## Build for linux as testnet
+```
+npm run build-linux-test
+```
+## Build for windows as mainnet
+```
+npm run build-linux-main
 ```
 
-## Run
 
-```
-node app.js
-```
 
 ## Usage
-
 ```
 node app.js --help
 
