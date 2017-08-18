@@ -55,7 +55,7 @@ function main() {
     return;
   }
 
-  var appConfigFile = path.join(baseDir, 'config.json');
+  var appConfigFile = path.join(baseDir, 'config-testnet.json');
   if (program.config) {
     appConfigFile = path.resolve(process.cwd(), program.config);
   }
@@ -74,12 +74,12 @@ function main() {
   appConfig.version = version;
   appConfig.baseDir = baseDir;
   appConfig.buildVersion = 'development';
-  appConfig.netVersion = process.env.NET_VERSION || 'localnet';
+  appConfig.netVersion = process.env.NET_VERSION || 'testnet';
   appConfig.publicDir = path.join(baseDir, 'public', 'dist');
 
   global.Config = appConfig;
 
-  var genesisblockFile = path.join(baseDir, 'genesisBlock.json');
+  var genesisblockFile = path.join(baseDir, 'genesisBlock-testnet.json');
   if (program.genesisblock) {
     genesisblockFile = path.resolve(process.cwd(), program.genesisblock);
   }
