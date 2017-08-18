@@ -13,31 +13,31 @@ npm install
 or
 yarn install
 ```
-## Just run as localnet
+## Just run in localnet
 ```
 npm start
 ```
-## Build for windows as localnet
+## Build for windows in localnet
 ```
 npm run build-win64-local
 ```
-## Build for windows as testnet
+## Build for windows in testnet
 ```
 npm run build-win64-test
 ```
-## Build for windows as mainnet
+## Build for windows in mainnet
 ```
 npm run build-win64-main
 ```
-## Build for linux as localnet
+## Build for linux in localnet
 ```
 npm run build-linux-local
 ```
-## Build for linux as testnet
+## Build for linux in testnet
 ```
 npm run build-linux-test
 ```
-## Build for windows as mainnet
+## Build for windows in mainnet
 ```
 npm run build-linux-main
 ```
