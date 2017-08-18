@@ -55,7 +55,7 @@ function main() {
     return;
   }
 
-  var appConfigFile = path.join(baseDir, 'config-testnet.json');
+  var appConfigFile = path.join(baseDir, 'config.json');
   if (program.config) {
     appConfigFile = path.resolve(process.cwd(), program.config);
   }
@@ -79,7 +79,7 @@ function main() {
 
   global.Config = appConfig;
 
-  var genesisblockFile = path.join(baseDir, 'genesisBlock-testnet.json');
+  var genesisblockFile = path.join(baseDir, 'genesisBlock.json');
   if (program.genesisblock) {
     genesisblockFile = path.resolve(process.cwd(), program.genesisblock);
   }
