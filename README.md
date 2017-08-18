@@ -4,8 +4,10 @@
 - nodejs v6.3.1+
 - npm 3.10.3+ (not cnpm)
 - sqlite v3.8.2+
+- install node-gyp
 - g++
 - libssl
+- npm install -g gulp browserify
 
 ## Install node_modules
 ```
@@ -13,33 +15,35 @@ npm install
 or
 yarn install
 ```
-## Just run in localnet
+## run agrichain node in localnet(window,linux,mac)
 ```
 npm start
 ```
-## Build for windows in localnet
-```
-npm run build-win64-local
-```
-## Build for windows in testnet
+
+## run agrichain node on windows (in testnet)
 ```
 npm run build-win64-test
+cd build/agrichain-win64-1.0.1-mainnet
+node app.js
 ```
-## Build for windows in mainnet
+## run agrichain node on windows (in mainet)
 ```
 npm run build-win64-main
+cd build/agrichain-win64-1.0.1-testnet
+node app.js
 ```
-## Build for linux in localnet
-```
-npm run build-linux-local
-```
-## Build for linux in testnet
+
+## run agrichain node on linux (in testnet)
 ```
 npm run build-linux-test
+cd build/agrichain-win64-1.0.1-testnet
+node app.js
 ```
-## Build for windows in mainnet
+## run agrichain node on linux (in mainet)
 ```
 npm run build-linux-main
+cd build/agrichain-win64-1.0.1-testnet
+node app.js
 ```
 
 
