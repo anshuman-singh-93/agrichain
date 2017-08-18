@@ -270,6 +270,7 @@ private.attachApi = function () {
   }
 
   router.post('/forging/enable', function (req, res) {
+    console.log('enabling forgin,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,')
     var body = req.body;
     library.scheme.validate(body, {
       type: "object",
@@ -517,6 +518,7 @@ private.loadMyDelegates = function (cb) {
 
       if (account.isDelegate) {
         private.keypairs[keypair.publicKey.toString('hex')] = keypair;
+
         library.logger.info("Forging enabled on account: " + account.address);
       } else {
         library.logger.info("Delegate with this public key not found: " + keypair.publicKey.toString('hex'));

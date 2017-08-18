@@ -12,7 +12,7 @@ var format = util.format;
 var buildTime = moment().format('HH:mm:ss DD/MM/YYYY');
 
 function build(osVersion, netVersion) {
-  var dir = 'acchain-' + osVersion + '-' + package.version + '-' + netVersion;
+  var dir = 'agrichain-' + osVersion + '-' + package.version + '-' + netVersion;
   var fullpath = path.join(__dirname, 'build', dir);
   var cmds = [];
   cmds.push(format('cd %s && mkdir -p public dapps tmp logs bin', fullpath));

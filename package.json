@@ -5,7 +5,12 @@
   "scripts": {
     "start": "node app.js",
     "test": "./node_modules/.bin/mocha --require mocha-babel",
-    "build": "gulp"
+    "build-win64-local": "gulp win64-local",
+    "build-win64-test": "gulp win64-test",
+    "build-win64-main": "gulp win64-main",
+    "build-linux-local": "gulp linux-local",
+    "build-linux-test": "gulp linux-test",
+    "build-linux-main": "gulp linux-main"
   },
   "author": "Acchain Team <system@acchain.org>",
   "dependencies": {
