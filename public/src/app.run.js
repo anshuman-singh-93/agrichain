@@ -19,6 +19,7 @@ angular.module('asch').run(function ($rootScope, $location, ipCookie, apiService
         	apiService.account({
 				address: userService.address
 			}).success(function (res) {
+                console.log('account updated')
 				if (res.success == true) {
 					userService.update(res.account);
 				};

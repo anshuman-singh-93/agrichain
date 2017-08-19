@@ -14,6 +14,7 @@ angular.module('asch').service('userService', function () {
         }
     }
     this.update = function (account) {
+        console.log(account)
         this.balance = account.balance;
         this.secondPublicKey = account.secondPublicKey;
         if (window.sessionStorage) {

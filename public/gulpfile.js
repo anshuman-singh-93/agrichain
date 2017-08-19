@@ -296,6 +296,10 @@ gulp.task('connect', function() {
 				url = 'src' + path;
 				if (!fs.existsSync(url)) {
 					url = 'bower_components' + path;
+					if (!fs.existsSync(url)) {
+						url = 'src/index.html';
+					}
+
 				}
 				if (path.endsWith('.scss') || path.endsWith('.css')) {
 					res.setHeader('content-type', 'text/css');
