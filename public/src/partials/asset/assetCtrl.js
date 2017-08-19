@@ -321,7 +321,7 @@ angular.module('asch').controller('assetCtrl', function ($scope, $rootScope, api
         if (!userService.secondPublicKey) {
             $scope.rpsecondPassword = '';
         }
-        $scope.publishtrs = AcchainJS.uia.createIssuer(name, desc, userService.secret, $scope.rpsecondPassword);
+        $scope.publishtrs = agrichainJS.uia.createIssuer(name, desc, userService.secret, $scope.rpsecondPassword);
         $scope.comfirmDialog = true;
         $scope.dialogNUM = 1;
         $rootScope.isBodyMask = true;
@@ -459,7 +459,7 @@ angular.module('asch').controller('assetCtrl', function ($scope, $rootScope, api
 		    unlockCondition: unlockCondition,
 		    extra: extra
 		}
-		$scope.assetTrs = AcchainJS.uia.createAsset(payload, userService.secret, $scope.regAssetSecondPassword);
+		$scope.assetTrs = agrichainJS.uia.createAsset(payload, userService.secret, $scope.regAssetSecondPassword);
         $scope.dialogNUM = 2;
         $scope.comfirmDialog = true;
         $rootScope.isBodyMask = true;
@@ -597,7 +597,7 @@ angular.module('asch').controller('assetCtrl', function ($scope, $rootScope, api
         if (!userService.secondPublicKey) {
             $scope.wosecondPassword = '';
         }
-        var transaction = AcchainJS.uia.createFlags(currency, flagType, flag,userService.secret, $scope.wosecondPassword);
+        var transaction = agrichainJS.uia.createFlags(currency, flagType, flag,userService.secret, $scope.wosecondPassword);
         postSerivice.writeoff(transaction).success(function (res) {
             if (res.success == true) {
                 $scope.wosecondPassword = '';
@@ -647,7 +647,7 @@ angular.module('asch').controller('assetCtrl', function ($scope, $rootScope, api
         
         var realAmount = parseInt($scope.amount) * Math.pow(10, $scope.currentAsset.precision);
         var exchangeRate = $scope.exchangeRate.toString();
-        var trs = AcchainJS.uia.createIssue($scope.myPublishmoneyName, String(realAmount), exchangeRate, userService.secret, $scope.pbsecondPassword);
+        var trs = agrichainJS.uia.createIssue($scope.myPublishmoneyName, String(realAmount), exchangeRate, userService.secret, $scope.pbsecondPassword);
         postSerivice.writeoff(trs).success(function (res) {
             if (res.success == true) {
                 $scope.pbsecondPassword = '';
@@ -694,7 +694,7 @@ angular.module('asch').controller('assetCtrl', function ($scope, $rootScope, api
         if (!userService.secondPublicKey) {
             $scope.setsecondPassword = '';
         }
-        var trs = AcchainJS.uia.createFlags(currency, flagType, flag, userService.secret, $scope.setsecondPassword);
+        var trs = agrichainJS.uia.createFlags(currency, flagType, flag, userService.secret, $scope.setsecondPassword);
         postSerivice.writeoff(trs).success(function (res) {
             if (res.success == true) {
                 $scope.setsecondPassword = '';

@@ -32,7 +32,7 @@ angular.module('asch').controller('payCtrl', function ($scope, $rootScope, $filt
         if ($scope.amount && Number($scope.amount) > 0) {
         	var precision_treated = Math.pow(10,precision);
             var amount = parseFloat(($scope.amount * precision_treated).toFixed(0));
-            var fee = AcchainJS.transaction.calculateFee(amount);
+            var fee = agrichainJS.transaction.calculateFee(amount);
             $scope.fee = $filter('xasFilter')(fee);
         }
     }
@@ -72,7 +72,7 @@ angular.module('asch').controller('payCtrl', function ($scope, $rootScope, $filt
         if (!userService.secondPublicKey) {
             $scope.secondPassword = '';
         }
-        transaction = AcchainJS.transaction.createTransaction(String($scope.fromto), amount.toString(), currency, $scope.remark, userService.secret, $scope.secondPassword);
+        transaction = agrichainJS.transaction.createTransaction(String($scope.fromto), amount.toString(), currency, $scope.remark, userService.secret, $scope.secondPassword);
         postSerivice.post(transaction).success(function (res) {
             if (res.success == true) {
                 $scope.passwordsure = true;

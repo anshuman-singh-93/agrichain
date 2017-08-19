@@ -1,15 +1,15 @@
 {
-  "name": "acchain",
+  "name": "agrichain",
   "version": "1.0.0",
   "authors": [
-    "Acchain Team <system@acchain.org>"
+    "agrichain Team <system@agrichain.org>"
   ],
-  "description": "accchain front project",
+  "description": "agrichain front project",
   "moduleType": [
     "globals"
   ],
   "keywords": [
-    "accchain"
+    "agrichain"
   ],
   "license": "MIT",
   "ignore": [

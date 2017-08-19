@@ -3,6 +3,6 @@ angular.module('asch').filter('timeAgoFilter', function($filter) {
 		if (fullTime) {
 			return $filter('timestampFilter')(time);
 		}
-		return AcchainJS.utils.format.timeAgo(time);
+		return agrichainJS.utils.format.timeAgo(time);
 	}
 });

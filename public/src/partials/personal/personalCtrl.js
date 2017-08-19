@@ -54,7 +54,7 @@ angular.module('asch').controller('personalCtrl', function ($scope, $rootScope, 
 		} else if (!reg.test(secondPwd)) {
 			toastError($translate.instant('ERR_PASSWORD_INVALID_FORMAT'));
 		} else if (reg.test(secondPwd) && reg.test(confirmPwd) && secondPwd == confirmPwd) {
-			var transaction = AcchainJS.signature.createSignature(userService.secret, $scope.secondpassword);
+			var transaction = agrichainJS.signature.createSignature(userService.secret, $scope.secondpassword);
 			postSerivice.post(transaction).success(function (res) {
 				if (res.success == true) {
 					$scope.passwordsure = true;

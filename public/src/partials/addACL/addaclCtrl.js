@@ -12,7 +12,7 @@ angular.module('asch').controller('addaclCtrl', function ($scope, $rootScope, ap
         if (!userService.secondPublicKey) {
             $scope.secondPassword = '';
         }
-        $scope.addacltrs = AcchainJS.uia.createAcl(currency, operator, flag, list, userService.secret, $scope.secondPassword);
+        $scope.addacltrs = agrichainJS.uia.createAcl(currency, operator, flag, list, userService.secret, $scope.secondPassword);
         $scope.comfirmDialog = true;
         $rootScope.isBodyMask = true;
 

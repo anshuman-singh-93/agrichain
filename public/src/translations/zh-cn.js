@@ -159,7 +159,7 @@ window.Translations['zh-cn'] = {
   PASSWORD_RULE_TIP: '输入8到16位数字和字母组合',
   INPUT_AGAIN: '再次输入',
   PASSWORD: '密码',
-  SUBMIT_SECOND_PASSWORD_TIP: '请确定您已经安全保存了二级密码，一旦丢失，您在Acchain系统中的财产将无法找回，设置二级密码需要1ACC手续费',
+  SUBMIT_SECOND_PASSWORD_TIP: '请确定您已经安全保存了二级密码，一旦丢失，您在agrichain系统中的财产将无法找回，设置二级密码需要1ACC手续费',
   SUBMIT: '提交',
   ALREADY_SET: '已设置',
   NOT_SET: '未设置',

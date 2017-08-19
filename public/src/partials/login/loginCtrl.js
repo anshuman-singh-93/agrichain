@@ -42,7 +42,7 @@ angular.module('asch').controller('loginCtrl', function ($scope, $rootScope, api
 		$rootScope.checkpwd = false;
 		var code = new Mnemonic(Mnemonic.Words.ENGLISH);
 		$scope.newsecret = code.toString();
-		newpublicKey = AcchainJS.crypto.getKeys($scope.newsecret).publicKey;
+		newpublicKey = agrichainJS.crypto.getKeys($scope.newsecret).publicKey;
 		$rootScope.newpublicKey = newpublicKey
 	};
 
@@ -108,7 +108,7 @@ angular.module('asch').controller('loginCtrl', function ($scope, $rootScope, api
 	$scope.saveTxt = function (filename) {
 		$scope.savepwd = true;
 		var text = $scope.newsecret.trim();
-		//var address = AcchainJS.crypto.getAddress(newpublicKey);
+		//var address = agrichainJS.crypto.getAddress(newpublicKey);
 		//txt = 'secret:' + '\r\n' + text + '\r\n\r\n' + 'address:' + '\r\n' + address + '\r\n';
 		txt = 'secret:' + '\r\n' + text;
 		var link = document.createElement("a");
@@ -137,7 +137,7 @@ angular.module('asch').controller('loginCtrl', function ($scope, $rootScope, api
 		if (!Mnemonic.isValid($scope.secret)) {
 			return toastError($translate.instant('ERR_VIOLATE_BIP39'));
 		}
-		var publicKey = AcchainJS.crypto.getKeys($scope.secret).publicKey;
+		var publicKey = agrichainJS.crypto.getKeys($scope.secret).publicKey;
 		$rootScope.publickey = publicKey;
 		apiService.login({
 			publicKey: publicKey

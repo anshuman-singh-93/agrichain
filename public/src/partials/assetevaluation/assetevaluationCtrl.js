@@ -52,9 +52,9 @@ angular.module('asch').controller('assetevaluationCtrl', function ($scope, $root
 	$scope.vote_submit = function(){
 		var trs ;
         if($scope.dialogNUM == 1){
-            trs = AcchainJS.uia.createApproval(1, $scope.votecurrency, userService.secret, $scope.votesecondPassword);
+            trs = agrichainJS.uia.createApproval(1, $scope.votecurrency, userService.secret, $scope.votesecondPassword);
 		} else if($scope.dialogNUM == 2){
-            trs = AcchainJS.uia.createApproval(2, $scope.votetransaction, userService.secret, $scope.votesecondPassword);
+            trs = agrichainJS.uia.createApproval(2, $scope.votetransaction, userService.secret, $scope.votesecondPassword);
         }
         postSerivice.post(trs).success(function (res) {
             if (res.success == true) {

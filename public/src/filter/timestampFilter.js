@@ -3,6 +3,6 @@
  */
 angular.module('asch').filter('timestampFilter', function($filter) {
     return function (timestamp) {
-        return AcchainJS.utils.format.fullTimestamp(timestamp);
+        return agrichainJS.utils.format.fullTimestamp(timestamp);
     }
 });

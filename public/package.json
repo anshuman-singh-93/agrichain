@@ -1,13 +1,13 @@
 {
-  "name": "acchain-frontend",
-  "description": "acchain frontend",
+  "name": "agrichain-frontend",
+  "description": "agrichain frontend",
   "version": "1.0.0",
   "private": true,
   "scripts": {
     "postinstall": "npm run build",
     "preinstall": "bower install",
     "start": "gulp",
-    "build": "browserify build.js -o bower_components/bitcore-mnemonic.js && cp ../acchain-js/browserify-acchain.js bower_components/"
+    "build": "browserify build.js -o bower_components/bitcore-mnemonic.js && cp ../agrichain-js/browserify-agrichain.js bower_components/"
   },
   "dependencies": {
     "bitcore-mnemonic": "1.0.1",

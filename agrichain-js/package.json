@@ -1,17 +1,17 @@
 {
-  "name": "acchain-js",
+  "name": "agrichain-js",
   "version": "1.0.0",
-  "description": "acchain javascript library",
+  "description": "agrichain javascript library",
   "main": "index.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "browserify build.js -o browserify-acchain.js && uglifyjs browserify-acchain.js > browserify-acchain-min.js"
+    "build": "browserify build.js -o browserify-agrichain.js && uglifyjs browserify-agrichain.js > browserify-agrichain-min.js"
   },
   "keywords": [
-    "acchain",
+    "agrichain",
     "js",
     "library"
   ],

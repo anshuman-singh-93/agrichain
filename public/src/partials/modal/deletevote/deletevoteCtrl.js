@@ -13,7 +13,7 @@ angular.module('asch').controller('deletevoteCtrl', function ($scope, $rootScope
             toastError($translate.instant('ERR_SECOND_PASSWORD_FORMAT'));
             return;
         }
-        var transaction = AcchainJS.vote.createVote($rootScope.deletevoteContent, userService.secret, $scope.secondpassword)
+        var transaction = agrichainJS.vote.createVote($rootScope.deletevoteContent, userService.secret, $scope.secondpassword)
         postSerivice.post(transaction).success(function (res) {
             if (res.success == true) {
                 $rootScope.coedobj = {}

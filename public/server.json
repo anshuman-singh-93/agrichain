@@ -1,8 +1,8 @@
 {
 	"server": {
 		"dev": "http://localhost:4000",
-		"dev2": "https://testnet.acchain.org",
-		"dev3": "http://mainnet.acchain.org"
+		"dev2": "https://testnet.agrichain.org",
+		"dev3": "http://mainnet.agrichain.org"
 	},
 	//登录接口
 	"loginApi": {

@@ -1,5 +1,5 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
-window.AcchainJS = AcchainJS = require('./index.js');
+window.agrichainJS = agrichainJS = require('./index.js');
 
 },{"./index.js":2}],2:[function(require,module,exports){
 module.exports = {
@@ -21272,7 +21272,7 @@ module.exports={
         "spec": ">=6.0.0 <7.0.0",
         "type": "range"
       },
-      "/Users/MG-PRO/Projects/git/acchain/acchain-js/node_modules/browserify-sign"
+      "/Users/MG-PRO/Projects/git/agrichain/agrichain-js/node_modules/browserify-sign"
     ]
   ],
   "_from": "elliptic@>=6.0.0 <7.0.0",
@@ -21307,7 +21307,7 @@ module.exports={
   "_shasum": "cac9af8762c85836187003c8dfe193e5e2eae5df",
   "_shrinkwrap": null,
   "_spec": "elliptic@^6.0.0",
-  "_where": "/Users/MG-PRO/Projects/git/acchain/acchain-js/node_modules/browserify-sign",
+  "_where": "/Users/MG-PRO/Projects/git/agrichain/agrichain-js/node_modules/browserify-sign",
   "author": {
     "name": "Fedor Indutny",
     "email": "fedor@indutny.com"
