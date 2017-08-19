@@ -1,4 +1,5 @@
-angular.module('asch').config(function ($routeProvider) {
+angular.module('asch').config(function ($routeProvider,$locationProvider) {
+	$locationProvider.html5Mode(true);
 
 	$routeProvider.when('/personal', {
 		templateUrl: 'partials/personal/index.html'
