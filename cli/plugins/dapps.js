@@ -9,7 +9,8 @@ var npm = require("npm");
 var request = require("request");
 var valid_url = require("valid-url");
 var fsExtra = require('fs-extra');
-var AschJS = require('asch-js');
+var AschJS = require('../../agrichain-js');
+
 var accountHelper = require("../helpers/account.js");
 var blockHelper = require("../helpers/block.js");
 var dappHelper = require("../helpers/dapp.js");
@@ -281,6 +282,8 @@ function addDapp() {
 			});
 		},
 		function(next) {
+			console.log('path is')
+			console.log(dappsPath)
 			dappPath = path.join(dappsPath, dappTrs.id);
 			fsExtra.copy(templatePath, dappPath, {clobber: true}, next);
 		},
@@ -296,7 +299,7 @@ function addDapp() {
 		},
 		function (next) {
 			console.log("Registering dapp in localnet");
-			var api = new Api({port: 4096});
+			var api = new Api({port: 4000});
 			api.broadcastTransaction(dappTrs, function (err) {
 				if (err) {
 					next("Failed to register dapp: " + err);

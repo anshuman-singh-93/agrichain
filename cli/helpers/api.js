@@ -25,7 +25,7 @@ function Api(options) {
   this.options = options || {};
   this.mainnet = this.options.mainnet;
   this.host = this.options.host || "127.0.0.1";
-  this.port = this.options.port || (this.mainnet ? 4000 : 5000);
+  this.port = this.options.port || (this.mainnet ? 5000 : 4000);
   this.baseUrl = "http://" + this.host + ":" + this.port;
   this.magic = this.mainnet ? '5f5b3cf5' : '8e9b66ed';
 }
@@ -62,6 +62,9 @@ Api.prototype.post = function (path, data, cb) {
 }
 
 Api.prototype.broadcastTransaction = function (trs, cb) {
+
+  console.log('url is')
+  console.log(this.baseUrl + "/peer/transactions")
   request({
     method: "POST",
     url: this.baseUrl + "/peer/transactions",

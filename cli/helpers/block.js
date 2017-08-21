@@ -344,7 +344,7 @@ module.exports = {
 			asset: {
 				uiaAsset: {
 					name: 'CBTETF',
-					desc: 'The Digital Asset ETF fund, sponsored by fund institutions, members of the ACCHAIN DAO organization, and numerous fund managers, is a digital asset index fund with an equal value ACC lead, was completed on June 6th, 2017.',
+					desc: 'The Digital Asset ETF fund, sponsored by fund institutions, members of the agrichain DAO organization, and numerous fund managers, is a digital asset index fund with an equal value ACC lead, was completed on June 6th, 2017.',
 					currency: 'CBTETF',
 					maximum: '266',
 					precision: 0,

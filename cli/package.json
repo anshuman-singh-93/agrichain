@@ -1,5 +1,5 @@
 {
-  "name": "acchain-cli",
+  "name": "agrichain-cli",
   "preferGlobal": true,
   "version": "1.1.2",
   "description": "Command line interface for bootstrapping and managing asch dapps",
@@ -13,9 +13,9 @@
     "cli"
   ],
   "bin": {
-    "acchain-cli": "./bin/acchain-cli"
+    "agrichain-cli": "./bin/agrichain-cli"
   },
-  "author": "Acchain Team <system@acchain.org>",
+  "author": "agrichain Team <system@agrichain.org>",
   "license": "MIT",
   "dependencies": {
     "asch-js": "*",
@@ -35,11 +35,11 @@
     "valid-url": "=1.0.9"
   },
   "bugs": {
-    "url": "https://github.com/acchain/issues"
+    "url": "https://github.com/agrichain/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/acchain/acchain-cli.git"
+    "url": "https://github.com/agrichain/agrichain-cli.git"
   },
-  "homepage": "https://github.com/acchain/acchain-cli"
+  "homepage": "https://github.com/agrichain/agrichain-cli"
 }

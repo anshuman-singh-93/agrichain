@@ -1,7 +1,7 @@
 #!/bin/bash
 
 readonly PROGRAM_DIR=$(dirname $0)
-readonly CLI=$PROGRAM_DIR/../bin/acchain-cli
+readonly CLI=$PROGRAM_DIR/../bin/agrichain-cli
 
 secrets=(
 "detect congress palm cram ripple donkey chat lunar rack era benefit detect"

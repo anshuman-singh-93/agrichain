@@ -1,6 +1,6 @@
 var fs = require('fs');
 var Api = require('../helpers/api.js');
-var aschJS = require('../../acchain-js');
+var aschJS = require('../../agrichain-js');
 
 var globalOptions;
 
