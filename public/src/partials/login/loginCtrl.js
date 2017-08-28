@@ -138,6 +138,7 @@ angular.module('asch').controller('loginCtrl', function ($scope, $rootScope, api
 			return toastError($translate.instant('ERR_VIOLATE_BIP39'));
 		}
 		var publicKey = agrichainJS.crypto.getKeys($scope.secret).publicKey;
+		console.log('publick key is',publicKey)
 		$rootScope.publickey = publicKey;
 		apiService.login({
 			publicKey: publicKey
