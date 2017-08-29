@@ -4,7 +4,7 @@
 - nodejs v6.3.1+
 - npm 3.10.3+
 - sudo apt-get install sqlite3 libsqlite3-dev (for linux)
-- sudo install node-gyp
+- sudo npm install -g node-gyp
 - sudo npm install -g gulp browserify
 - sudo apt-get install build-essential (for linux)
 - sudo apt-get install make auto-conf libtool (for linux)
