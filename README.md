@@ -2,12 +2,13 @@
 ## System Dependency
 
 - nodejs v6.3.1+
-- npm 3.10.3+ (not cnpm)
-- sqlite v3.8.2+
-- install node-gyp
-- g++
-- libssl
-- npm install -g gulp browserify
+- npm 3.10.3+
+- sudo apt-get install sqlite3 libsqlite3-dev (for linux)
+- sudo install node-gyp
+- sudo npm install -g gulp browserify
+- sudo apt-get install build-essential (for linux)
+- sudo apt-get install make auto-conf libtool (for linux)
+- npm install sodium --unsafe-perm
 
 ## Install node_modules
 ```
